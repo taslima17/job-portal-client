@@ -24,7 +24,7 @@ const CreateJob = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        fetch('http://localhost:5000/jobs', {
+        fetch('https://quiet-escarpment-45022.herokuapp.com/jobs', {
             method: "POST",
             headers: {
                 'content-type': 'application/json',

@@ -46,7 +46,7 @@ const AllJobs = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('http://localhost:5000/jobs')
+        fetch('https://quiet-escarpment-45022.herokuapp.com/jobs')
             .then(res => res.json())
             .then(data => setJobs(data));
     }, [jobs]);
@@ -56,7 +56,7 @@ const AllJobs = () => {
     const handleDelete = (id) => {
         const isDelete = window.confirm("Are you confirm to delete?")
         if (isDelete) {
-            fetch(`http://localhost:5000/jobs/${id}`, {
+            fetch(`https://quiet-escarpment-45022.herokuapp.com/jobs/${id}`, {
                 method: "DELETE", headers: {
                     'content-type': "application/json"
                 }

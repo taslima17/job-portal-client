@@ -5,7 +5,7 @@ const ViewJob = () => {
     const id = useParams().id;
     const [job, setJob] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/jobs/${id}`)
+        fetch(`https://quiet-escarpment-45022.herokuapp.com/jobs/${id}`)
             .then(res => res.json())
             .then(data => setJob(data))
     }, [])
