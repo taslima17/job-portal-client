@@ -1,0 +1,25 @@
+
+
+
+.authentication{
+  
+   
+    padding:100px 50px 400px 50px;
+}
+form{
+    padding: 20px;
+}
+form input,textarea{
+    width:90%;
+    margin:10px 20px;
+    padding: 10px;
+}
+form select{
+    width: 90%;
+    margin:10px 20px;
+    padding: 10px;
+}
+.info{
+    padding: 400px 20px;
+}
+
